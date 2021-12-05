@@ -13,7 +13,7 @@ import com.example.newsapp.databinding.FragmentTopBinding
 
 class TopFragment : Fragment() {
 
-    lateinit var binding: FragmentTopBinding
+    private lateinit var binding: FragmentTopBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
