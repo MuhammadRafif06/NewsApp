@@ -1,6 +1,5 @@
 package com.example.newsapp
 
-import com.example.newsapp.adapter.SectionPagerAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.newsapp.databinding.ActivityMainBinding
