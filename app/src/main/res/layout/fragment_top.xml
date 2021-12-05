@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".fragment.AllNewsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,8 +13,9 @@
         android:layout_height="match_parent"
         android:background="@color/gray_bg">
 
-        <include android:id="@+id/news_headline"
-            layout="@layout/news_headline"/>
+        <include
+            android:id="@+id/news_headline"
+            layout="@layout/news_headline" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_top_news"
@@ -22,9 +25,8 @@
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/news_headline" />
+            app:layout_constraintTop_toBottomOf="@id/news_headline" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-</FrameLayout>
+</androidx.core.widget.NestedScrollView>
