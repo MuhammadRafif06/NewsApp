@@ -12,7 +12,7 @@ class SectionPagerAdapter(fa: FragmentActivity): FragmentStateAdapter(fa) {
 
     override fun createFragment(position: Int): Fragment {
         return when (position){
-            8 -> AllNewsFragment()
+            0 -> AllNewsFragment()
             1 -> TopFragment()
             2 -> PopularFragment()
             else -> TopFragment()
