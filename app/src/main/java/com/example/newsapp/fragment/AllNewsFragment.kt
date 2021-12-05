@@ -34,7 +34,7 @@ class AllNewsFragment : Fragment() {
             tvDateHeadline.text = (DataNews.dateHeadline[0])
             tvAuthorHeadline.text = (DataNews.authorHeadline[0])
         }
-//        TODO Hiii
+
         bindingNewsHeadline(binding.newsHeadline, 0)
 
         return binding.root
