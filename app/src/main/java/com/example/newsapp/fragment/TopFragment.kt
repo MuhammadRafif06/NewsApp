@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.newsapp.bindingNewsHeadline
 import com.example.newsapp.data.DataNews
 import com.example.newsapp.databinding.FragmentTopBinding
 
@@ -25,6 +26,9 @@ class TopFragment : Fragment() {
             layoutManager = LinearLayoutManager(activity)
             adapter = NewsAdapter(DataNews.dataAllNews)
         }
+
+        bindingNewsHeadline(binding.newsHeadline, 2)
+
         return binding.root
     }
 }
